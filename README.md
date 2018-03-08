@@ -4,4 +4,4 @@ FriendFinder is an application that maps your personality traits against a datab
 
 Just click **Start the Survey** on the home page to begin!
 
-*If you have any questions please feel free to email me at [notArealEmail@?mail.com] (http://www.masswerk.at/googleBBS/)*
+*If you have any questions please feel free to email me at [notArealEmail@?mail.com](http://www.masswerk.at/googleBBS/)*

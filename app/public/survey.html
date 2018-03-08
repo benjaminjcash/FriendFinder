@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>\
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+
+</head>
+<body>
+    <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Survey Questions</h1>
+                </div>
+                <div class="panel-body">
+                    
+                        <h4>About You</h4>
+                        
+                        <h4>Name (required)</h4>
+                        <input type="input" id="name-input">
+                    
+                        <h4>Link to photo image (required)</h4>
+                        <input type="input" id="photo-input">
+                    
+                        <div>
+                            <h4>1. You like jewelry</h4>
+                            <select class="chosen-select" id="q1">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>2. You are easily corrupted</h4>
+                            <select class="chosen-select" id="q2">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>3. You enjoy gardening</h4>
+                            <select class="chosen-select" id="q3">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>4.You are more intelligent than the average hobbit</h4>
+                            <select class="chosen-select" id="q4">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>5. You are a formidable fighter</h4>
+                            <select class="chosen-select" id="q5">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>6. You are loyal</h4>
+                            <select class="chosen-select" id="q6">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>7. You pity Gollum</h4>
+                            <select class="chosen-select" id="q7">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>8. You are fatter than the average hobbit</h4>
+                            <select class="chosen-select" id="q8">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>9. You know how to read, and enjoy reading very much</h4>
+                            <select class="chosen-select" id="q9">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h4>10. You are helpful, generous, and selfless</h4>
+                            <select class="chosen-select" id="q10">
+                                <option value=""></option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+
+                        <br>
+
+                        <button id="myBtn" class="btn btn-primary submit">Submit</button>
+
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div id="modal-content" class="modal-content">
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+    </div>
+<p>
+    <a href="/api/friends">API Friends List</a>
+    |
+    <a href="">GitHub Repo</a>
+</p>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+        var newFriend = {
+            name: $("#name-input").val().trim(),
+            photo: $("#photo-input").val().trim(),
+            scores: []
+        }
+
+        for (let i=1; i<11; i++) {
+            var questionId = "#q" + i;
+            newFriend.scores.push(parseInt($(questionId).val()));
+        }
+        
+        console.log("new friend added, sent to server.");
+        console.log(newFriend);
+        
+
+        $.ajax("/api/friends", {
+            type: "POST",
+            data: newFriend
+        }).then(function(res) {
+            console.log("server received new friend.");
+            console.log(res);
+            $("#modal-content").html(
+                `<div class="well">
+                   <h1>${res.name}</h1>
+                   <img src="${res.photo}" height="500" width="500">
+                </div>
+                `);
+            $("#myModal").modal();
+        })    
+    })
+</script>
